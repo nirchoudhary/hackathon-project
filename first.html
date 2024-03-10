@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education _point</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="" />
+    <script src="http://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset some default styles */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(8, 1, 28);
+        color: honeydew;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 75px;
+        background-color: rgb(7, 25, 41);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 20px;
+        margin-top: 30px;
+      }
+
+      nav ul li:hover {
+        color: rgb(66, 77, 86);
+      }
+
+      .left {
+        font-size: 1.6rem;
+      }
+
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 800px;
+      }
+
+      .firstsection > div {
+        width: 40%;
+      }
+
+      .leftsection {
+        font-size: 2rem;
+        margin-top: 30px;
+        padding-left: 200px;
+      }
+
+      .purple {
+        color: aqua;
+      }
+
+      .rightsection {
+      }
+
+      .rightsection img {
+        width: 400px;
+      }
+
+      .cyan {
+        color: cyan;
+      }
+
+      .right li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .right li a:hover {
+        text-decoration: none;
+        color: rgb(137, 128, 242);
+      }
+
+      #element {
+        color: aqua;
+      }
+
+      .elemen-tstyle {
+        margin-top: 5%;
+      }
+
+      .secondsection {
+        max-width: 50vw;
+        height: 50vh;
+        margin-top: 5%;
+        margin-left: 10%;
+      }
+
+      .second-image {
+        text-align: center;
+        margin: 30px;
+        padding-left: 133px;
+      }
+
+      .second-image img {
+        margin: 50px;
+      }
+
+      .secondsection h1 {
+        font-size: 1.9rem;
+      }
+
+      .text-gray {
+        color: gray;
+      }
+
+      .main hr {
+        background: rgb(34, 3, 56);
+      }
+
+      .experience {
+        background: white;
+        width: 85vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+
+      .vertical {
+        height: 100px;
+        width: 1px;
+        background-color: white;
+        margin: 0 140px;
+      }
+
+      .vertical img {
+        height: 60px;
+        position: relative;
+        top: -60px;
+        left: -29px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 65px;
+        width: 200px;
+        margin-left: -80px;
+      }
+
+      .vertical-desc {
+        padding-right: 50px;
+        margin-top: 80px;
+        width: 190px;
+        font-size: 9px;
+        margin-left: -80px;
+        color: gray;
+      }
+
+      .vertical img {
+        height: 60px;
+        position: relative;
+        top: -60px;
+        left: -29px;
+      }
+
+      .java-script img {
+        height: 60px;
+        position: relative;
+        top: -60px;
+        left: -29px;
+      }
+
+      .note-js img {
+        height: 60px;
+        position: relative;
+        top: -60px;
+        left: -29px;
+      }
+
+      .leftsection .button {
+        padding: 50px 0;
+      }
+
+      .button .btn {
+        background-color: rgb(8, 1, 28);
+        color: aliceblue;
+        padding: 6px;
+        border: 2px solid white;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 1170px;
+        margin: auto;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .footer {
+        width: 100%;
+        background-color: rgb(24, 35, 36);
+        padding: 70px 0px;
+      }
+
+      .footer-col {
+        width: 22%;
+        padding: 0 15px;
+      }
+
+      .footer-col h4 {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+      }
+
+      .footer-col h4::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+      }
+
+      .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+      }
+
+      .footer-col ul li a:hover {
+        color: #ffffff;
+        padding-left: 8px;
+      }
+
+      .footer-col .social-links a {
+        transition: all 0.5s ease;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0, 10px, 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+      }
+
+      .footer-col .social-links a:hover {
+        color: #24262b;
+        background-color: #ffffff;
+      }
+
+      /* Responsive */
+      @media (max-width: 767px) {
+        .footer-col {
+          width: 50%;
+          padding: 0 15px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .registration-section {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+      }
+
+      .registration-popup {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      .right ul .login_popup {
+        width: 90px;
+        height: 50px;
+        background: transparent;
+        border: 2px solid #fff;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1.1em;
+        color: #fff;
+        font-weight: 500;
+        margin: 20px;
+        margin-left: 40px;
+        transition: 0.5s;
+      }
+      .right ul .login_popup:hover {
+        background: #fff;
+        color: #162938;
+      }
+      .wrapper {
+        position: relative;
+        width: 400px;
+        height: 440px;
+        background: transparent;
+        border: 2px solid rgb(254, 254, 254);
+        border-radius: 20px;
+        backdrop-filter: blur(20pox);
+        background-color: rgb(76, 168, 168);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 561px;
+        margin-top: 116px;
+        overflow: hidden;
+      }
+      .wrapper.from-box {
+        width: 100%;
+        padding: 40px;
+      }
+      .wrapper .icon-close{
+        position: absolute;
+        top: 0;
+        right:0;
+        width: 45px;
+        height: 45px;
+        font-size: 2rem;
+        background: #162938;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        overflow-block: hidden;
+        border-bottom-left-radius: 20px;
+        cursor: pointer;
+        z-index: 1;
+
+      }
+      .from-box h2 {
+        font-size: 2em;
+        color: #050708;
+        text-align: center;
+      }
+      .input-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        border-bottom: 2px solid #162938;
+        margin: 30px 0;
+      }
+      .input-box label {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 1em;
+        color: #162938;
+        font-weight: 500;
+        pointer-events: none;
+        transition: 0.5s;
+      }
+      .input-box input {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        color: #162938;
+        font-weight: 600;
+        padding: 0 35px 0 5px;
+      }
+      .input-box .icon {
+        position: absolute;
+        right: 8px;
+        font-size: 1.2em;
+        color: #162938;
+        line-height: 57px;
+      }
+      .input-box a{
+        text-decoration: none;
+      }
+      .input-box a:hover{
+        text-decoration: underline;
+      }
+      .input-box input:focus ~ label,
+      .input-box input:valid ~ label {
+        top: -5px;
+      }
+
+      .remember-forgot {
+        font-size: 0.9em;
+        color: #162938;
+        font-weight: 500;
+        margin: -7px 0 10px;
+        justify-content: space-between;
+        
+      }
+      .remember-forgot label input{
+
+        accent-color: #162338;
+        margin-right: 3px;
+      }
+      .remember-forgot a{
+        color: #162338;
+        text-decoration: none;
+      }
+      .remember-forgot a:hover{
+        text-decoration: underline;
+      }
+      .btn{
+        width:80%;
+        height:25px;
+        margin: 30px 0 10px;
+        margin-left: 35px;
+      }
+        .login-register{
+            font-size: .9em;
+            color: #162938;
+            text-align: center;
+            font-weight: 500;
+            margin: 45px 0 10px;
+        }
+        .login-register p a{
+            text-decoration: none;
+            color: #162938;
+        }
+        .login-register p a:hover{
+            text-decoration: underline;
+        }
+
+      /* Add styles for your form elements as needed */
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">CGPA Cracker</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">contact me</a></li>
+            <button class="login_popup">Login</button>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+      <div class="from-box login">
+        <h2>Login</h2>
+        <from action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" class="email" />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" class="email" />
+            <label>password</label>
+            <a href="#">Forgot password</a>
+            <button type="Submit" class="btn">Login</button>
+          </div>
+
+          <div class="remember-forgot">
+            <label
+              ><input type="checkbox" class="check-box" />Remember me</label
+            >
+          </div>
+          <div class="login-register">
+            <p>
+              Don't have an account?<a href="#" class="register-link"
+                >Register</a
+              >
+            </p>
+          </div>
+        </from>
+      </div>
+    </div>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi My Name Is <span class="purple">"Nir"</span>
+          <div>And I Am a Passionate</div>
+          <span id="element"></span>
+          <div class="button">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="../basic html/nir/devloper-removebg-preview.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondsection">
+        <span class="text-gray"> Work I Have Done So Far</span>
+        <h1>Work Experience</h1>
+        <div class="experience">
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="../basic html/html programing/images/images/HTML5.png"
+              alt="image"
+            />
+            <div class="vertical-title">
+              HTML Developer
+              <div>(2010-2012)</div>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. At sint
+              vel ipsa voluptate, cum quasi quod ad blanditiis. Alias libero
+              culpa delectus aut perspiciatis molestias quis non repellendus
+              excepturi? Quaerat.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="css"
+              src="../basic html/nir/css-removebg-preview.png"
+              alt=""
+            />
+            <div class="vertical-title">
+              CSS Developer
+              <div>(2012-2014)</div>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. At sint
+              vel ipsa voluptate, cum quasi quod ad blanditiis. Alias libero
+              culpa delectus aut perspiciatis molestias quis non repellendus
+              excepturi? Quaerat.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="java-script"
+              src="../basic html/nir/javascript-logo-removebg-preview.png"
+              alt=""
+            />
+            <div class="vertical-title">
+              JavaScript Developer
+              <div>(2014-2015)</div>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. At sint
+              vel ipsa voluptate, cum quasi quod ad blanditiis. Alias libero
+              culpa delectus aut perspiciatis molestias quis non repellendus
+              excepturi? Quaerat.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="note-js"
+              src="../basic html/nir/note-js-removebg-preview.png"
+              alt=""
+            />
+            <div class="vertical-title">
+              Node.js Developer
+              <div>(2010-2013)</div>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. At sint
+              vel ipsa voluptate, cum quasi quod ad blanditiis. Alias libero
+              culpa delectus aut perspiciatis molestias quis non repellendus
+              excepturi? Quaerat.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="../basic html/nir/react.js-img-removebg-preview.png"
+              alt=""
+            />
+            <div class="vertical-title">
+              React Developer
+              <div>(2010-2013)</div>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. At sint
+              vel ipsa voluptate, cum quasi quod ad blanditiis. Alias libero
+              culpa delectus aut perspiciatis molestias quis non repellendus
+              excepturi? Quaerat.
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="second-image">
+        <img src="../basic html/nir/robot-removebg-preview.png" alt="image" />
+      </div>
+    </main>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Graphic Designer", "&amp; A Video Editor."],
+        typeSpeed: 50,
+      });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Payment Options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Graphic Designing</a></li>
+              <li><a href="#">Video Editing</a></li>
+              <li><a href="#">Software Making</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Graphic Designer", "&amp; Video Editor."],
+        typeSpeed: 50,
+      });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
